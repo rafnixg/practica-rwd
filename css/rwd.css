@@ -1,14 +1,17 @@
 /* 
-Hace que el Padding, Margin y Border 
-se incluyan en el total del width y height
-de todos los elementos
+	Hace que el Padding, Margin y Border 
+	se incluyan en el total del width y height
+	de todos los elementos
 */
 
 *{
 	box-sizing:border-box;
 }
 
-/* Sistema de 12 Columnas */
+/* 
+	Sistema de 12 Columnas, para calcular
+	una columna usamos: 100% / 12 columns = 8.33%
+*/
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -21,3 +24,22 @@ de todos los elementos
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+/*
+	Cada Columna debe ser flotada a la izquierda
+	y tener un padding de 15px -> (Criterio personal)
+*/
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/*
+	Fix para limpiar el flujo de la web
+*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
