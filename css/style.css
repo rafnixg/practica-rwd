@@ -1,0 +1,28 @@
+.header{
+	background: #e5e5e5;
+	text-align: center;
+	padding: 30px 0px;
+}
+.menu{
+	list-style: none;
+}
+.menu li{
+	padding: 10px 0 10px 10px;
+	background: #ccc;
+	margin-bottom: 10px;
+}
+.menu a{
+	text-decoration: none;
+	color:#000;
+}
+
+.menu li:hover{
+	padding-left: 25px;
+	background: #bbb;
+}
+.menu li:hover a{
+	color:#333;
+}
+.titulo{
+	margin-bottom: 10px;
+}
